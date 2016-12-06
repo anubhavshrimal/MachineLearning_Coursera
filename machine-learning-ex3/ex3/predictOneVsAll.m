@@ -31,10 +31,12 @@ X = [ones(m, 1) X];
 %       
 
 
+h = X * all_theta';
+[val, p] = max(h, [], 2);
 
-
-
-
+display(size(X));
+display(size(h));
+display(size(all_theta));
 
 % =========================================================================
 
